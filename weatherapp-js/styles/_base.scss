@@ -1,0 +1,28 @@
+// _base.scss
+
+
+$background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+$font-stack: 'montserrat', sans-serif;
+$flex-direction: column;
+
+body {
+    font-family: $font-stack;
+    background-image: url('fw.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: $flex-direction;
+    min-height: 100vh;
+    background-image: $background-image;
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: center;
+}
